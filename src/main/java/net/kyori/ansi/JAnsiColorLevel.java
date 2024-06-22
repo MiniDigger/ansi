@@ -33,6 +33,7 @@ final class JAnsiColorLevel {
     Throwable cause = null;
     try {
       Class.forName("org.fusesource.jansi.AnsiConsole");
+      Class.forName("org.fusesource.jansi.AnsiColors");
     } catch (final ClassNotFoundException classNotFoundException) {
       cause = classNotFoundException;
     }
