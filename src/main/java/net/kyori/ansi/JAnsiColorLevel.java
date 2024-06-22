@@ -1,7 +1,7 @@
 /*
  * This file is part of ansi, licensed under the MIT License.
  *
- * Copyright (c) 2023 KyoriPowered
+ * Copyright (c) 2023-2024 KyoriPowered
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -33,6 +33,7 @@ final class JAnsiColorLevel {
     Throwable cause = null;
     try {
       Class.forName("org.fusesource.jansi.AnsiConsole");
+      Class.forName("org.fusesource.jansi.AnsiColors");
     } catch (final ClassNotFoundException classNotFoundException) {
       cause = classNotFoundException;
     }
